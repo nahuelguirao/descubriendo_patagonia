@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descubriendo la Patagonia</title>
+    <!-- ESTILOS GENERALES -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- ESTILOS NAVBAR -->
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <!-- ESTILOS LUGARES (PRUEBA) -->
+    <link rel="stylesheet" href="styles/lugares.css" />
+    <!-- ICONO -->
+    <link rel="shortcut icon" href="img/Recurso 4.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <a href="#" class="logo"><img src="img/Recurso 4.png" alt=""></a>
+      <img src="img/icono-menu.png" alt="Icono menu" id="icono-menu" />
+      <!-- NAVBAR -->
+      <nav id="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="#">Actividades</a>
+        <a href="lugares_prueba.html">Hoteles</a>
+        <a href="lugares.html">Lugares</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+    <!-- SECTION LUGARES -->
+    <section id="section-lugares">
+      <h2>Los lugares mas pintorescos de la Patagonia</h2>
+      <!-- CARD 1 -->
+      <div class="card-lugar">
+        <h3>Glaciar Perito Moreno</h3>
+        <img
+          src="./img/lugares/panoramica-glaciar-perito-moreno.png"
+          alt="Fotografia panoramica del Glaciar Perito Moreno"
+          onclick="mostrarParrafo(1)"
+        />
+        <p class="parrafo" id="parrafo1">
+          El Glaciar Perito Moreno es un impresionante monumento de hielo
+          ubicado en el Parque Nacional Los Glaciares, Argentina. Destaca por su
+          inmensidad, tono azul profundo y su dinámico proceso de avance y
+          retroceso. Este glaciar se encuentra en equilibrio y ofrece
+          espectaculares rupturas de hielo que atraen a visitantes de todo el
+          mundo. El parque que lo rodea es un área de gran belleza natural y
+          biodiversidad, y el glaciar es uno de los destinos turísticos más
+          populares de Argentina.
+        </p>
+      </div>
+      <!-- CARD 2 -->
+      <div class="card-lugar">
+        <h3>Bariloche</h3>
+        <img
+          src="./img/lugares/bariloche-escalado.png"
+          alt="Fotografia del lago y las montañas de fondo"
+          onclick="mostrarParrafo(2)"
+        />
+        <p class="parrafo" id="parrafo2">
+          Bariloche es una ciudad turística ubicada en la Patagonia Argentina,
+          en las orillas del Lago Nahuel Huapi. Rodeada de un impresionante
+          entorno natural, la ciudad es conocida por sus estaciones de esquí en
+          invierno y actividades al aire libre en verano. Ofrece delicioso
+          chocolate suizo, una arquitectura alpina pintoresca y una rica escena
+          gastronómica. Los visitantes disfrutan de aventuras al aire libre como
+          senderismo, ciclismo y deportes acuáticos, además de eventos y
+          festivales a lo largo del año.
+        </p>
+      </div>
+      <!-- CARD 3 -->
+      <div class="card-lugar">
+        <h3>Tierra del fuego</h3>
+        <img
+          src="./img/lugares/tierraDelFuego-escalado.png"
+          alt="La ciudad de Tierra del fuego vista desde el oceano con las montañas de fondo"
+          onclick="mostrarParrafo(3)"
+        />
+        <p class="parrafo" id="parrafo3">
+          Tierra del Fuego, ubicada en la punta sur de Argentina, es una región
+          de impresionante belleza natural con montañas, glaciares y un entorno
+          vírgen. La ciudad de Ushuaia, la más austral del mundo, es el punto de
+          partida común para expediciones a la Antártida y ofrece una mezcla
+          única de cultura argentina y aventuras extremas. La región es un
+          paraíso para actividades al aire libre como el senderismo y la
+          navegación por canales, y también cuenta con una rica historia y
+          cultura influenciada por pueblos originarios y exploradores europeos.
+        </p>
+      </div>
+      <!-- CARD 4 -->
+      <div class="card-lugar">
+        <h3>Puerto Madryn</h3>
+        <img
+          src="./img/lugares/puertoMadryn-escalado.png"
+          alt="Ballena asomando la cola con Puerto Madryn de fondo"
+          onclick="mostrarParrafo(4)"
+        />
+        <p class="parrafo" id="parrafo4">
+          Puerto Madryn, en la provincia de Chubut, Argentina, destaca por su
+          vida marina y playas. La Península Valdés es famosa por avistamientos
+          de ballenas y pingüinos. Es un destino popular para el buceo y ofrece
+          playas relajantes como El Doradillo y Paraná. Museos como el
+          Oceanográfico y el Ecocentro destacan la vida marina y la
+          conservación. La gastronomía local se centra en mariscos frescos como
+          centolla y merluza negra. En resumen, Puerto Madryn es conocida por su
+          rica vida marina, actividades al aire libre y una destacada oferta
+          gastronómica en un hermoso entorno costero.
+        </p>
+      </div>
+    </section>
+  </body>
+  <script src="./scripts/menu.js"></script>
+  <script src="./scripts/lugares.js"></script>
+</html>
