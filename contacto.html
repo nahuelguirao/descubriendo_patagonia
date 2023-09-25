@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Descubriendo la Patagonia</title>
@@ -16,87 +15,120 @@
     <!-- FONT FAMILY (Roboto) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
-        rel="stylesheet" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- HEADER -->
     <header class="header">
-        <a href="#" class="logo"><img src="img/Recurso 4.png" alt=""></a>
-        <img src="img/icono-menu.png" alt="Icono menu" id="icono-menu" />
-        <!-- NAVBAR -->
-        <nav id="navbar">
-            <a href="index.html">Inicio</a>
-            <a href="#">Actividades</a>
-            <a href="#">Hoteles</a>
-            <a href="lugares.html">Lugares</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+      <a href="#" class="logo"><img src="img/Recurso 4.png" alt="" /></a>
+      <img src="img/icono-menu.png" alt="Icono menu" id="icono-menu" />
+      <!-- NAVBAR -->
+      <nav id="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="#">Actividades</a>
+        <a href="#">Hoteles</a>
+        <a href="lugares.html">Lugares</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
     </header>
 
     <!-- formulario de contacto en html y css -->
     <section class="contacto">
-        <div class="formulario">
-            <h1>Formulario de contacto</h1>
-            <h3>Dejanos tu consulta y en breve nos contactamos.</h3>
+      <div class="formulario">
+        <h1>Formulario de contacto</h1>
+        <h3>Dejanos tu consulta y en breve nos contactamos.</h3>
 
-            <form action="#" method="post">
-                <p>
-                    <label for="nombre" class="colocar_nombre">Nombre
-                        <span class="obligatorio">*</span>
-                    </label>
-                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-                        placeholder="Escribe tu nombre">
-                </p>
+        <form action="#" method="post">
+          <p>
+            <label for="nombre" class="colocar_nombre"
+              >Nombre
+              <span class="obligatorio">*</span>
+            </label>
+            <input
+              type="text"
+              name="introducir_nombre"
+              id="nombre"
+              required="obligatorio"
+              placeholder="Escribe tu nombre"
+            />
+          </p>
 
-                <p>
-                    <label for="email" class="colocar_email">Email
-                        <span class="obligatorio">*</span>
-                    </label>
-                    <input type="email" name="introducir_email" id="email" required="obligatorio"
-                        placeholder="Escribe tu Email">
-                </p>
+          <p>
+            <label for="email" class="colocar_email"
+              >Email
+              <span class="obligatorio">*</span>
+            </label>
+            <input
+              type="email"
+              name="introducir_email"
+              id="email"
+              required="obligatorio"
+              placeholder="Escribe tu Email"
+            />
+          </p>
 
-                <p>
-                    <label for="telefone" class="colocar_telefono">Teléfono
-                    </label>
-                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>
+          <p>
+            <label for="telefone" class="colocar_telefono">Teléfono </label>
+            <input
+              type="tel"
+              name="introducir_telefono"
+              id="telefono"
+              placeholder="Escribe tu teléfono"
+            />
+          </p>
 
-                <p>
-                    <label for="website" class="colocar_website">Sitio web
-                    </label>
-                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
-                </p>
+          <p>
+            <label for="website" class="colocar_website">Sitio web </label>
+            <input
+              type="url"
+              name="introducir_website"
+              id="website"
+              placeholder="Escribe la URL de tu web"
+            />
+          </p>
 
-                <p>
-                    <label for="asunto" class="colocar_asunto">Asunto
-                        <span class="obligatorio">*</span>
-                    </label>
-                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
-                        placeholder="Escribe un asunto">
-                </p>
+          <p>
+            <label for="asunto" class="colocar_asunto"
+              >Asunto
+              <span class="obligatorio">*</span>
+            </label>
+            <input
+              type="text"
+              name="introducir_asunto"
+              id="assunto"
+              required="obligatorio"
+              placeholder="Escribe un asunto"
+            />
+          </p>
 
-                <p>
-                    <label for="mensaje" class="colocar_mensaje">Mensaje
-                        <span class="obligatorio">*</span>
-                    </label>
-                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
-                        placeholder="Deja acá tu comentario..."></textarea>
-                </p>
+          <p>
+            <label for="mensaje" class="colocar_mensaje"
+              >Mensaje
+              <span class="obligatorio">*</span>
+            </label>
+            <textarea
+              name="introducir_mensaje"
+              class="texto_mensaje"
+              id="mensaje"
+              required="obligatorio"
+              placeholder="Deja acá tu comentario..."
+            ></textarea>
+          </p>
 
-                <button type="submit" name="enviar_formulario" id="enviar">
-                    <p>Enviar</p>
-                </button>
+          <button type="submit" name="enviar_formulario" id="enviar">
+            <p>Enviar</p>
+          </button>
 
-                <p class="aviso">
-                    <span class="obligatorio"> * </span> Los campos son obligatorios.
-                </p>
-            </form>
-        </div>
+          <p class="aviso">
+            <span class="obligatorio"> * </span> Los campos son obligatorios.
+          </p>
+        </form>
+      </div>
     </section>
     <script src="./scripts/menu.js"></script>
-</body>
-
+  </body>
 </html>
