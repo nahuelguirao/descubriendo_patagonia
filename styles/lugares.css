@@ -59,6 +59,9 @@
   text-align: justify;
   font-size: 1.5rem;
   color: #eeeeee;
+  display: none;
+  opacity: 0; /* Inicialmente, el párrafo está completamente transparente */
+  transition: opacity 0.5s ease; /* Agrega una transición de 0.5 segundos para cambiar la opacidad */
 }
 
 @media (max-width: 1100px) {

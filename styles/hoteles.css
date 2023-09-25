@@ -41,7 +41,8 @@ select {
   display: grid;
   grid-template-rows: repeat(2, 0.5fr); /* Crea 3 filas de igual tamaño */
   grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas de igual tamaño */
-  gap: 10px; /* Espacio entre las celdas */
+  gap: 10px;
+  border-bottom: 2px double #bdbdbd;
 }
 
 #section-hoteles h3 {
@@ -145,7 +146,7 @@ select {
   .contacto li {
     font-size: 1.2rem;
   }
-  .mapa iframe{
+  .mapa iframe {
     width: 100%;
   }
 }
