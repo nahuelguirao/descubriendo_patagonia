@@ -48,11 +48,10 @@
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   cursor: pointer;
-  transition: transform 1s;
 }
 
 .card-lugar img:hover {
-  transform: scale(1.1);
+  animation: shake 0.5s ease 1;
 }
 
 .card-lugar .parrafo {
@@ -81,6 +80,12 @@
   }
 }
 
+@media (max-width: 650px) {
+  .card-lugar .parrafo{
+    font-size: 0.7rem;
+  }
+}
+
 @media (max-width: 484px) {
   #section-lugares h2 {
     font-size: 1.8rem;
@@ -97,5 +102,23 @@
   .card-lugar p {
     font-size: 0.9rem;
     text-align: start;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
