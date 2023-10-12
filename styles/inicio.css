@@ -1,0 +1,104 @@
+video{
+    width: 100%;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+    animation: fade-in 1s ease-in-out;
+}
+
+main{
+    margin: 5% auto 0 ;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #EEEEEE;
+    padding: 10px 50px;
+    background-color: #053B50;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation: fade-in 1s ease-in-out;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+main:hover{
+    background: linear-gradient(to bottom, #053B50, #176B87);
+    transform: scale(1.1);
+}
+
+main h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+main p{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+main a{
+    text-align: center;
+    margin-top: 2%;
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: #EEEEEE;
+    color: black;
+    border-radius: 50px;
+    transition: transform 0.5s;
+}
+
+main a:hover{
+    transform: scale(1.1);
+    background-color: #053B50;
+    color: #EEEEEE;
+}
+
+@media (max-width: 1405px){
+    video{
+        display: none;
+    }
+    main{
+        margin: 5% auto ;
+    }
+}
+
+
+@media (max-width: 1082px){
+    main h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 902px){
+    main h1{
+        font-size: 2rem;
+    }
+    main p{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 430px){
+    main{
+        padding: 10px 30px;
+        width: 55%;
+    }
+}
+
+
+@media (max-width: 382px){
+    main{
+        margin: 10% auto;
+    }
+    main h1{
+        font-size: 1.5rem;
+    }
+    main p{
+        font-size: 0.6rem;
+    }
+    main a{
+        font-size: 0.8rem;
+    }
+}
