@@ -1,50 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Descubriendo la Patagonia</title>
-    <!-- ESTILOS GENERALES -->
-    <link rel="stylesheet" href="styles/styles.css" />
-    <!-- ESTILOS NAVBAR -->
-    <link rel="stylesheet" href="styles/navbar.css" />
-    <!-- ESTILOS AL AIRE LIBRE-->
-    <Link rel="stylesheet" href="styles/Aire_Libre.css">
-    <!-- ICONO -->
-    <link rel="shortcut icon" href="img/Recurso 4.png" type="image/x-icon" />
-    <!-- FONT FAMILY (Roboto) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
-    rel="stylesheet" />
- </head>
- <body>
-    <!-- HEADER -->
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Descubriendo la Patagonia</title>
+   <!-- ESTILOS GENERALES -->
+   <link rel="stylesheet" href="styles/styles.css" />
+   <!-- ESTILOS NAVBAR -->
+   <link rel="stylesheet" href="styles/navbar.css" />
+   <!-- ESTILOS ACTIVIDADES-->
+   <Link rel="stylesheet" href="styles/ventana-actividades.css">
+   <!-- ICONO -->
+   <link rel="shortcut icon" href="img/Recurso 4.png" type="image/x-icon" />
+   <!-- FONT FAMILY (Roboto) -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet" />
+</head>
+
+<body>
+   <!-- HEADER -->
    <header class="header">
       <a href="#" class="logo"><img src="img/Recurso 4.png" alt=""></a>
       <img src="img/icono-menu.png" alt="Icono menu" id="icono-menu" />
       <!-- NAVBAR -->
       <nav id="navbar">
-        <a href="index.html">Inicio</a>
-        <a href="Actividades.html">Actividades</a>
-        <a href="hoteles.html">Hoteles</a>
-        <a href="lugares.html">Lugares</a>
-        <a href="contacto.html">Contacto</a>
+         <a href="index.html">Inicio</a>
+         <a href="Actividades.html">Actividades</a>
+         <a href="hoteles.html">Hoteles</a>
+         <a href="lugares.html">Lugares</a>
+         <a href="contacto.html">Contacto</a>
       </nav>
    </header>
 
-   <main id="main-Actividades">
-      <h2>Actividades</h2>
-      <section id="opcion">
-         <label for="lugares">Elija su destino de viaje:</label>
-         <select name="lugares" id="lugares">
-          <option value="" disabled selected>Elija una opcion...</option>
-          <option value="peritomoreno">Perito Moreno</option>
-          <option value="bariloche">Bariloche</option>
-          <option value="tierradelfuego">Tierra del Fuego</option>
-          <option value="puertomadryn">Puerto Madryn</option>
-         </select>
-      </section>
-   </main> 
-   </body>
+   <main>
+      <h1>Actividades al aire libre</h1>
+      <div id="main-actividades-al">
+         <div class="actividad-al">
+            <h3>Rafting en el Rio Manso</h3>
+            <img src="img/Actividades/Al-actividades/rafting.jpg" alt="Rafting">
+            <p>
+               La actividad de rafting consisite en una travesia por el Rio Manso de la mano de
+               un profesional que se encargara de mantener la seguridad de los que se encuentran en el bote.
+            </p>
+            <p>
+               Ademas podra disfrutar de las vistas por la travesia y pequeños juegos con el bote en el rio.
+            </p>
+         </div>
+         <div class="actividad-al">
+            <h3>Snorkelin con Leones Marinos</h3>
+            <img src="img/Actividades/Al-actividades/snorkeling.jpg" alt="Snorkelin con leones marinos">
+            <p>
+               Esta actividad debera tener sumo cuidado ya que estos animales no se encontraran entrenados para ser
+               obedientes, no obstante tienen una
+               personalidad amigable por lo que es poco probable que sufra algun tipo de ataque.
+            </p>
+            <p>
+               Con todos los materiales necesarios, podra disfrutar de esta experiencia de la mano de profesionales que
+               se encargaran de la seguridad del grupo.
+            </p>
+         </div>
+         <div class="actividad-al">
+            <h3>Tour Punta Tombo</h3>
+            <img src="img/Actividades/Al-actividades/tour-punta-tombo.jpg" alt="Punta tombo imagen">
+            <p>
+               Punta Tombo es una reserva natural que les permitira un recorrido guiado agradable, mientras observan la
+               fauna de los alrededores, incluyendo pingüinos, posible avistamiento de ballenas, entre otros animales
+               del territorio.
+            </p>
+            <p>
+               Cabe resaltar que es una experiencia unica poder ver en completa naturaleza a estas hermosas criaturas.
+            </p>
+         </div>
+         <div class="actividad-al">
+            <h3>Trekking por la Laguna Esmeralda</h3>
+            <img src="img/Actividades/Al-actividades/trekking.webp" alt="Trekking en laguna Esmeralda">
+            <p>
+               Se realizara un recorrido de 9km por el bosque de la laguna, permitiendonos ver durante el trayecto los
+               glaciares y la fauna de al rededor.
+            </p>
+            <p>
+               Se recomienda ir preparado fisicamente para aguantar el trayecto de ida y vuelta, de igual forma son
+               vistas dignas de presenciar y recordar.
+            </p>
+         </div>
+      </div>
+   </main>
+</body>
+
 </html>

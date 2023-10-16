@@ -1,0 +1,71 @@
+main h1{
+    text-align: center;
+    margin: 5%;
+    animation: fade-in 1s ease-in-out;
+    font-size: 3rem;
+}
+
+#main-actividades-al{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    animation: fade-in 1s ease-in-out;
+    row-gap: 100px;
+    color: #EEEEEE;
+}
+
+#main-actividades-al h3{
+    font-weight: 600;
+}
+
+#main-actividades-al img{
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-bottom: 20px;
+}
+
+#main-actividades-al div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #176B87, #053B50);
+    width: 90%;
+    border-radius: 50px 0;
+    padding: 50px 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#main-actividades-al p{
+    width: 60%;
+    text-align: center;
+}
+
+@media (max-width:1200px){
+    #main-actividades-al{
+        grid-template-columns: 1fr;
+    }
+
+    #main-actividades-al p{
+        width: 80%;
+        text-align: center;
+    }
+
+    h3{
+        text-align: center;
+    }
+}
+
+@media(max-width: 640px){
+    main h1{
+        font-size: 2rem;
+    }
+
+    #main-actividades-al img{
+        width: 200px;
+        height: 100px;
+    }
+}

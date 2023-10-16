@@ -1,6 +1,6 @@
 video{
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.8;
     position: absolute;
     z-index: -1;
     animation: fade-in 1s ease-in-out;
