@@ -125,3 +125,7 @@ span {
     width: 90%;
   }
 }
+
+#exito{
+  display: none;
+}
