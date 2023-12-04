@@ -15,7 +15,7 @@ document.getElementById('formularioContacto').addEventListener('submit', (e) => 
         .then(respuesta => {
             if (respuesta.ok){
                 document.querySelector('.contacto').style.display = 'none'
-
+                alert("Formulario enviado con éxito.")
                 setTimeout(function() {
                     document.getElementById('formularioContacto').reset()
                     document.querySelector('.contacto').style.display = 'block'
