@@ -8,7 +8,10 @@ app = Flask(__name__)
 
 CORS(app, resources={r'/*': {'origins': '*'}})
 
-
+# Database host address:
+# NahueOli.mysql.pythonanywhere-services.com
+# Username:
+# NahueOli
 class Mensaje:
     def __init__(self, host, user, password, database):
         # Datos de conexión
@@ -72,8 +75,7 @@ class Mensaje:
         return self.cursor.rowcount > 0
 
 
-mensaje = Mensaje(host='localhost', user='root',
-                  password='', database='patagonia')
+mensaje = Mensaje(host='NahueOli.mysql.pythonanywhere-services.com', user='NahueOli', password='sqlbaseOli1605', database='NahueOli$patagonia')
 
 
 @app.route('/mensajes', methods=['GET'])

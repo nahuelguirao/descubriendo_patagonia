@@ -8,7 +8,7 @@ document.getElementById('formularioContacto').addEventListener('submit', (e) => 
     datos.append('asunto', document.getElementById('asunto').value);
     datos.append('mensaje', document.getElementById('mensaje').value);
 
-    fetch('http://localhost:5000/mensajes', {
+    fetch('http://NahueOli.pythonanywhere.com/mensajes', {
         method: 'POST',
         body: datos
     })
