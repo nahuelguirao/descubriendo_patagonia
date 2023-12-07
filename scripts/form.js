@@ -8,14 +8,15 @@ document.getElementById('formularioContacto').addEventListener('submit', (e) => 
     datos.append('asunto', document.getElementById('asunto').value);
     datos.append('mensaje', document.getElementById('mensaje').value);
 
-    fetch('http://NahueOli.pythonanywhere.com/mensajes', {
+    // Se realiza el fetch de la pagina suministrada por PythonAnywhere
+    fetch("http://NahueOli.pythonanywhere.com/mensajes", {
         method: 'POST',
         body: datos
     })
         .then(respuesta => {
             if (respuesta.ok){
                 document.querySelector('.contacto').style.display = 'none'
-                alert("Formulario enviado con éxito.")
+                alert("Formulario enviado con éxito.\nPresione aceptar para continuar")
                 setTimeout(function() {
                     document.getElementById('formularioContacto').reset()
                     document.querySelector('.contacto').style.display = 'block'

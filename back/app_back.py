@@ -6,12 +6,15 @@ import datetime
 
 app = Flask(__name__)
 
-CORS(app, resources={r'/*': {'origins': '*'}})
+# cors_config = {
+#     "origins": ["http://localhost:5500"]
+# }
 
-# Database host address:
-# NahueOli.mysql.pythonanywhere-services.com
-# Username:
-# NahueOli
+CORS(app, resources={r'/*': {'origins': '*'}})
+# CORS(app, resources={
+#     r"/api/v1/*": cors_config})
+
+
 class Mensaje:
     def __init__(self, host, user, password, database):
         # Datos de conexión
@@ -33,7 +36,7 @@ class Mensaje:
                 raise e
 
         self.cursor.execute(''' 
-                            CREATE TABLE if not EXISTS`patagonia`.`patagonia` (`ID` INT NOT NULL AUTO_INCREMENT , `nombre` VARCHAR(50) NOT NULL , `email` VARCHAR(50) NOT NULL , `telefono` INT(12) NOT NULL , `asunto` VARCHAR(70) NOT NULL , `mensaje` TEXT NOT NULL , `fecha_envio` DATE NOT NULL , `visto` BOOLEAN NOT NULL DEFAULT FALSE , `fecha_visto` DATE NULL DEFAULT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB;
+                            CREATE TABLE if not EXISTS patagonia.patagonia (`ID` INT NOT NULL AUTO_INCREMENT , `nombre` VARCHAR(50) NOT NULL , `email` VARCHAR(50) NOT NULL , `telefono` INT(12) NOT NULL , `asunto` VARCHAR(70) NOT NULL , `mensaje` TEXT NOT NULL , `fecha_envio` DATE NOT NULL , `visto` BOOLEAN NOT NULL DEFAULT FALSE , `fecha_visto` DATE NULL DEFAULT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB;
                             ''')
         # Confirma los cambios
         self.conexion.commit()
@@ -74,7 +77,7 @@ class Mensaje:
         self.conexion.commit()
         return self.cursor.rowcount > 0
 
-
+# Se ingresan los datos de la base de PythonAnywhere
 mensaje = Mensaje(host='NahueOli.mysql.pythonanywhere-services.com', user='NahueOli', password='sqlbaseOli1605', database='NahueOli$patagonia')
 
 
