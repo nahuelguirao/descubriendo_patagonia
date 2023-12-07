@@ -30,7 +30,7 @@ class Mensaje:
                 raise e
 
         self.cursor.execute(''' 
-                            CREATE TABLE if not EXISTS`patagonia`.`patagonia` (`ID` INT NOT NULL AUTO_INCREMENT , `nombre` VARCHAR(50) NOT NULL , `email` VARCHAR(50) NOT NULL , `telefono` INT(12) NOT NULL , `asunto` VARCHAR(70) NOT NULL , `mensaje` TEXT NOT NULL , `fecha_envio` DATE NOT NULL , `visto` BOOLEAN NOT NULL DEFAULT FALSE , `fecha_visto` DATE NULL DEFAULT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB;
+                            CREATE TABLE if not EXISTS`nahuelg2$patagonia`.`patagonia` (`ID` INT NOT NULL AUTO_INCREMENT , `nombre` VARCHAR(50) NOT NULL , `email` VARCHAR(50) NOT NULL , `telefono` INT(12) NOT NULL , `asunto` VARCHAR(70) NOT NULL , `mensaje` TEXT NOT NULL , `fecha_envio` DATE NOT NULL , `visto` BOOLEAN NOT NULL DEFAULT FALSE , `fecha_visto` DATE NULL DEFAULT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB;
                             ''')
         # Confirma los cambios
         self.conexion.commit()
@@ -72,8 +72,8 @@ class Mensaje:
         return self.cursor.rowcount > 0
 
 
-mensaje = Mensaje(host='localhost', user='root',
-                  password='', database='patagonia')
+mensaje = Mensaje(host='nahuelg2.mysql.pythonanywhere-services.com', user='nahuelg2',
+                  password='codoacodo', database='nahuelg2$patagonia')
 
 
 @app.route('/mensajes', methods=['GET'])
